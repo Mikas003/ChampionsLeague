@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Champions League</title>
+<style>
+    body{
+    background-image: url(Fundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Arial";
+   }
+   div{
+       margin: auto;
+       width: 50%;
+        text-align: center;
+        
+   }
+   #menu ul li a:hover{
+        border-radius: 10%;
+        background-color:#002292;
+}
+
+   #menu ul{
+       margin: 0;
+       background-color: transparent;
+       list-style: none;
+    }
+
+    #menu ul li{
+       display: inline;
+
+    }
+
+    #menu ul li a{
+       padding: 20px 20px;
+       display: inline-block;
+       color: white;
+       text-decoration: none;
+    }
+
+
+    .nav_tab{
+        width: 700px;
+        height: 400px;
+        margin: 40px auto;
+        background-color: #002292;
+        position: relative;
+    }
+
+    .nav_tab ul{
+        list-style: none;
+    }
+
+    .nav_tab ul li{
+        float: left;
+    }
+
+    .nav_tab label{
+        width: 115px;
+        padding: 25px;
+        background-color: #363b48;
+        display:block;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    .nav_tab label:hover{
+        background-color: #002292;
+    }
+
+    .rd_tabs:checked ~ label{
+        background-color: #002292;
+    }
+    .rd_tabs{
+        display: none;
+    }
+    .content{
+        border-bottom-right-radius:10%;
+        border-bottom-left-radius: 10%;
+        background-color: rgb(68, 0, 255);
+        display: none;
+        position: absolute;
+        height: 450px;
+        width: 700px;
+        left: 0;
+        overflow:auto;
+    }
+
+
+
+/*Barra de scroll invisivel*/
+    ::-webkit-scrollbar {
+         width: 0px;
+    
+        }
+
+
+
+
+    .rd_tabs:checked ~ .content{
+        display: block;
+    }
+
+    .oitavos{
+        margin-left: 5%;
+        margin-top: 3%;
+        text-align: justify;
+        color: white;
+    }
+    .oitavos td{
+        text-align: center;
+        padding: 0px;
+        border-collapse: collapse;
+
+    }
+    .oitavos th{
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+
+    .img{
+        width:18%;
+        height:18%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .imgjuve{
+        width:13%;
+        height:13%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .imgspo{
+        width:13%;
+        height:13%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .imgatle{
+        width:13%;
+        height:13%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .imgvila{
+        width:13%;
+        height:13%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .final{
+         margin-top: 3%;
+        text-align: justify;
+        color: white;
+    }
+    .final td{
+        text-align: center;
+        padding: 0px;
+        border-collapse: collapse;
+
+    }
+    .final th{
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+</style>
+</head>
+<body>
+    <div id="menu">
+        <img src="logo.png" height="90" width="90" alt="Champion-league">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Resultados.html">Resultados</a></li>
+            <li><a href="Stats.html">Estatisticas</a></li>
+            <li><a href="Sorteios.html">Sorteios</a></li>
+            <li><a href="FaseDeGrupos.html">Fase de grupos</a></li>
+        </ul>
+    </div>
+    <nav class="nav_tab">
+        <ul>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
+                <label for="tab1">Oitavos de final</label>
+                <div class="content">
+                <article>
+                    <table class="oitavos">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><img class="img" src="ajax.png" alt="benfas"></td>
+                            <td>VS</td>
+                            <td><img class="img" src="benfica.png" alt="benfas"></td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="img" src="city.png" alt="benfas"></td>
+                            <td>VS</td>
+                            <td><img class="imgspo" src="sporting.png" alt="benfas"></td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="img" src="united.png" alt="benfas"></td>
+                            <td>VS</td>
+                            <td><img class="imgatle" src="atletico.png" alt="benfas"></td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="img" src="real.png" alt="benfas"></td>
+                            <td>VS</td>
+                            <td><img class="img" src="psg.png" alt="benfas"></td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="imgjuve" src="juve.png" alt="benfas"></td>
+                            <td>VS</td>
+                            <td><img class="imgvila" src="vila.png" alt="benfas"></td>
+                        </tr>
+
+                        <tr>
+                            <td><img class="img" src="chelsea.png" alt="benfas"></td>
+                            <td>VS</td>
+                            <td><img class="img" src="lille.png" alt="benfas"></td>
+                        </tr>
+
+                    </table>
+                </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab2" >
+                <label for="tab2">Quartos de final</label>
+                <div class="content">
+                <article>
+                    <table class="final">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                            <td>VS</td>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                        </tr> 
+                        <tr>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                            <td>VS</td>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                            <td>VS</td>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                        </tr>
+                        <tr>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                            <td>VS</td>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                        </tr> 
+                    </table> 
+                </article>
+              </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab3" >
+                <label for="tab3">Semi-final</label>
+                <div class="content">
+                <article>
+                    <table class="final">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                            <td>VS</td>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                        </tr> 
+                        <tr>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                            <td>VS</td>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                        </tr>
+                    </table>
+                       
+                </article>
+            </div>
+            </li>
+        
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab4" >
+                <label for="tab4">Final</label>
+                <div class="content">
+                <article>
+                    <table class="final">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <br><br><br><br><br><br><br><br>
+                        <tr>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                            <td>VS</td>
+                            <td><img class="img" src="yh.png" alt="?"></td>
+                        </tr> 
+                    </table>
+                        
+                </article>
+                </article>
+            </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

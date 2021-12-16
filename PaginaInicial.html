@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Champions League</title>
+<style>
+   body{
+    background-image: url(Fundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Arial";
+   }
+   div{
+       margin: auto;
+       width: 50%;
+        text-align: center;
+        
+   }
+   #menu ul li a:hover{
+        border-radius: 10%;
+        background-color:#002292;
+   }
+
+   #menu ul{
+       margin: 0;
+       background-color: transparent;
+       list-style: none;
+    }
+
+    #menu ul li{
+       display: inline;
+
+    }
+
+    #menu ul li a{
+       padding: 20px 20px;
+       display: inline-block;
+       color: white;
+       text-decoration: none;
+    }
+
+    .nav_tab{
+        width: 700px;
+        height: 400px;
+        margin: 40px auto;
+        background-color: #002292;
+        position: relative;
+    }
+
+    .nav_tab ul{
+        list-style: none;
+    }
+
+    .nav_tab ul li{
+        float: left;
+    }
+
+    .nav_tab label{
+        width: 115px;
+        padding: 25px;
+        background-color: #363b48;
+        display:block;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    .nav_tab label:hover{
+        background-color: #002292;
+    }
+
+    .rd_tabs:checked ~ label{
+        background-color: #002292;
+    }
+    .rd_tabs{
+        display: none;
+    }
+    .content{
+        border-bottom-right-radius:10%;
+        border-bottom-left-radius: 10%;
+        background-color: rgb(68, 0, 255);
+        display: none;
+        position: absolute;
+        height: 450px;
+        width: 700px;
+        left: 0;
+        overflow:auto;
+    }
+
+/*Barra de scroll invisivel*/
+    ::-webkit-scrollbar {
+         width: 0px;
+    
+        }
+
+
+    .rd_tabs:checked ~ .content{
+        display: block;
+    }
+    
+    .img{
+        width : 450px;
+        height : 260px;
+        margin-top: 30px;
+    }
+    .noticia{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        color: white;
+        flex-wrap: wrap;
+        -ms-flex-align: end;
+    }
+    .noticia h1{
+        font-size: 24px;
+    }
+    .img2{
+        width : 450px;
+        height : 210px;
+        margin-top: 10px;
+    }
+    .img3{
+        width : 450px;
+        height : 240px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+    <div id="menu">
+        <img src="logo.png" height="90" width="90" alt="Champion-league">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Resultados.html">Resultados</a></li>
+            <li><a href="Stats.html">Estatisticas</a></li>
+            <li><a href="Sorteios.html">Sorteios</a></li>
+            <li><a href="FaseDeGrupos.html">Fase de grupos</a></li>
+        </ul>
+    </div>
+    <nav class="nav_tab">
+        <ul>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
+                <label for="tab1">Sporting vs City</label>
+                <div class="content">
+                <article>
+                <div class="noticia">
+                  <h1>Sporting encontra City nos Oitavos</h1>
+                  Manchester City é o proximo adversário para o Sporting, a verdadeira duvida é :"Quantos golos poderão levar?"
+                </div>
+                <img class="img" src="Ruben.png" alt="">
+                </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab2" >
+                <label for="tab2">Best defender</label>
+                <div class="content">
+                <article><div class="noticia">
+                    <h1>Benfica tem o melhor defesa desta champions league</h1>
+                    Nicolás Hernán Gonzalo Otamendi é um futebolista argentino que atua como zagueiro. Atualmente joga pelo Benfica e pode se dizer que é o melhor defesa desta chamions league 21/22, o homem é uma maquina.
+                  </div>
+                  <img class="img2" src="otamendi" alt="">
+                  </article>
+                  </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab3" >
+                <label for="tab3">Mr.Champions</label>
+                <div class="content">
+                <article>
+                    <div class="noticia">
+                        <h1>United vs Atletico</h1>
+                        Este jogo tem muito que se lhe diga, o Mr.Champions a ultima vez que encontrou o Atletico de madrid foi algo maracante para a historia da champions na primeira mão o Atletico destriu a juventos mas na segunda mão meus amigos o Mr.Champions fez historia, será que vai fazer historia de novo? 
+                      </div>
+                      <img class="img2" src="Ronaldo.png" alt="">
+                </article>
+            </div>
+            </li>
+        
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab4" >
+                <label for="tab4">Best attack</label>
+                <div class="content">
+                <article>
+                    <div class="noticia">
+                        <h1>Bayern munique tem o melhor ataque da historia</h1>
+                        Bayern munique neste momento encontra-se com 6 jogos e ainda só ganhou até agora, será que vai continuar com esta sequencias de vitorias?
+                      </div>
+                      <img class="img3" src="bayern.png" alt="">
+                </article>
+                </article>
+            </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

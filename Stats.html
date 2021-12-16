@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Champions League</title>
+<style>
+    body{
+    background-image: url(Fundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Arial";
+   }
+   div{
+       margin: auto;
+       width: 50%;
+        text-align: center;
+        
+   }
+   #menu ul li a:hover{
+        border-radius: 10%;
+        background-color:#002292;
+}
+
+
+   #menu ul{
+       margin: 0;
+       background-color: transparent;
+       list-style: none;
+    }
+
+    #menu ul li{
+       display: inline;
+
+    }
+
+    #menu ul li a{
+       padding: 20px 20px;
+       display: inline-block;
+       color: white;
+       text-decoration: none;
+    }
+
+    .nav_tab{
+        width: 700px;
+        height: 400px;
+        margin: 40px auto;
+        background-color: #002292;
+        position: relative;
+    }
+
+    .nav_tab ul{
+        list-style: none;
+    }
+
+    .nav_tab ul li{
+        float: left;
+    }
+
+    .nav_tab label{
+        width: 115px;
+        padding: 25px 25px;
+        background-color: #363b48;
+        display:block;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+
+    }
+    .nav_tab label:hover{
+        background-color: #002292;
+    }
+
+    .rd_tabs:checked ~ label{
+        background-color: #002292;
+    }
+    .rd_tabs{
+        margin: 0%;
+        padding: 0%;
+        text-align: justify;
+        display: none;
+    }
+    .content{
+        border-bottom-right-radius:10%;
+        border-bottom-left-radius: 10%;
+        
+        background-color: rgb(68, 0, 255);
+        display: none;
+        position: absolute;
+        height: 450px;
+        width: 700px;
+        left: 0;
+    }
+
+    .rd_tabs:checked ~ .content{
+        display: block;
+    }
+
+
+      .golos{
+        margin-top: 3%;
+        text-align: justify;
+        color: white;
+    }
+    .golos td{
+        padding: 0px;
+         border: 3px solid white;
+         border-collapse: collapse;
+    }
+    .golos th{
+        border: 3px solid black;
+        border-collapse: collapse;
+    }
+    
+    .FotoJogador{
+        width:50%;
+        height:50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .FotoEquipa{
+        width:18%;
+        height:18%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+</style>
+</head>
+<body>
+    <div id="menu">
+        <img src="logo.png" height="90" width="90" alt="Champion-league">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Resultados.html">Resultados</a></li>
+            <li><a href="Stats.html">Estatisticas</a></li>
+            <li><a href="Sorteios.html">Sorteios</a></li>
+            <li><a href="FaseDeGrupos.html">Fase de grupos</a></li>
+        </ul>
+    </div>
+    <nav class="nav_tab">
+        <ul>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
+                <label for="tab1">Golos</label>
+                <div class="content">
+                <article>
+                <div class="golos">
+                    <table>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Jogador</th>
+                            <th>Clube</th>
+                            <th>Assistencias</th>
+                        </tr>
+                        <tr>
+                            <td><img class="FotoJogador" src="cr7.png"  alt="Cristiano Ronaldo"></td>
+                            <td>Cristiano Ronaldo</td>
+                            <td>Manchester United</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td><img class="FotoJogador" src="Messi.png"   alt="Cristiano Ronaldo" ></td>
+                            <td>Lionel Messi</td>
+                            <td>PSG</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td><img class="FotoJogador" src="mbappe.png"   alt="Cristiano Ronaldo" ></td>
+                            <td>Mbappe</td>
+                            <td>PSG</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td><img class="FotoJogador" src="vinicius.png"   alt="Cristiano Ronaldo" ></td>
+                            <td>Vinicius Junior</td>
+                            <td>Real Madrid</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td><img class="FotoJogador" src="benzema.png"   alt="Cristiano Ronaldo" ></td>
+                            <td>Benzema</td>
+                            <td>Real Madrid</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td><img class="FotoJogador" src="darwin.png"   alt="Cristiano Ronaldo" ></td>
+                            <td>Darwin Nunes</td>
+                            <td>Benfica</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td><img class="FotoJogador" src="paulo.png"   alt="Cristiano Ronaldo" ></td>
+                            <td>Paulinho</td>
+                            <td>Sporting</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td><img class="FotoJogador" src="bernardo.png"   alt="Cristiano Ronaldo" ></td>
+                            <td>Bernardo Silva</td>
+                            <td>Manchester City</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                </div>
+                </article>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab2" >
+                <label for="tab2">Assistencias</label>
+                <div class="content">
+                <article>
+                    <div class="golos">
+                        <table>
+                            <tr>
+                                <th>Foto</th>
+                                <th>Jogador</th>
+                                <th>Clube</th>
+                                <th>Assistencias</th>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="cr7.png"  alt="Cristiano Ronaldo"></td>
+                                <td>Cristiano Ronaldo</td>
+                                <td>Manchester United</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="Messi.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Lionel Messi</td>
+                                <td>PSG</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="mbappe.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Mbappe</td>
+                                <td>PSG</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="vinicius.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Vinicius Junior</td>
+                                <td>Real Madrid</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="benzema.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Benzema</td>
+                                <td>Real Madrid</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="darwin.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Darwin Nunes</td>
+                                <td>Benfica</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="paulo.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Paulinho</td>
+                                <td>Sporting</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="bernardo.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Bernardo Silva</td>
+                                <td>Manchester City</td>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                  </article>
+                  </div>
+            </li>
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab3" >
+                <label for="tab3">Vitorias</label>
+                <div class="content">
+                <article>
+                    <div class="golos">
+                        <table>
+                            <tr>
+                                <th>Foto</th>
+                                <th>Clube</th>
+                                <th>Vitorias</th>
+                            </tr>
+                            <tr> 
+                                <td><img class="FotoEquipa" src="united.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Manchester United</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>  
+                                <td><img class="FotoEquipa" src="psg.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>PSG</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>   
+                                <td><img class="FotoEquipa" src="psg.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>PSG</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoEquipa" src="real.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Real Madrid</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoEquipa" src="real.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Real Madrid</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoEquipa" src="benfica.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Benfica</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoEquipa" src="sporting.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Sporting</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoEquipa" src="city.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Manchester City</td>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </article>
+            </div>
+            </li>
+        
+            <li>
+                <input type="radio" name="tabs" class="rd_tabs" id="tab4" >
+                <label for="tab4">Cartões</label>
+                <div class="content">
+                <article>
+                    <div class="golos">
+                        <table>
+                            <tr>
+                                <th>Foto</th>
+                                <th>Jogador</th>
+                                <th>Clube</th>
+                                <th>Cartões amarelos</th>
+                                <th>Cartões Vermelhos</th>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="cr7.png"  alt="Cristiano Ronaldo"></td>
+                                <td>Cristiano Ronaldo</td>
+                                <td>Manchester United</td>
+                                <td>10</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="Messi.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Lionel Messi</td>
+                                <td>PSG</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="mbappe.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Mbappe</td>
+                                <td>PSG</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="vinicius.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Vinicius Junior</td>
+                                <td>Real Madrid</td>
+                                <td>6</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="benzema.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Benzema</td>
+                                <td>Real Madrid</td>
+                                <td>6</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="darwin.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Darwin Nunes</td>
+                                <td>Benfica</td>
+                                <td>6</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="paulo.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Paulinho</td>
+                                <td>Sporting</td>
+                                <td>5</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img class="FotoJogador" src="bernardo.png"   alt="Cristiano Ronaldo" ></td>
+                                <td>Bernardo Silva</td>
+                                <td>Manchester City</td>
+                                <td>5</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>  
+                </article>  
+              </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
